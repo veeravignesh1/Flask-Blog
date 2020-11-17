@@ -5,7 +5,7 @@ posts =[
         'author':'Veera',
         'title': "First Blog Post",
         'content': "Content of first blog post",
-        'date posted': "11-Nov-2020"
+        'date_posted': "11-Nov-2020"
     },
     {
         'author':'Vignesh',
@@ -22,7 +22,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    return render_template("about.html",title="About")
 
 if __name__=="__main__":
     app.run(debug=True)
